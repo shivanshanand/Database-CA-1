@@ -10,3 +10,6 @@ const itemDetailSchema = new mongoose.Schema({
     required: true,
   },
 });
+
+const Items = mongoose.model("Items", itemDetailSchema);
+module.exports = Items;
